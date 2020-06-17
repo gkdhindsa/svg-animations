@@ -1,0 +1,60 @@
+.blue-eyes .eye-colour{
+    fill:blue;
+}
+
+.sad .mouth{
+    transform: rotate(180deg) scale(0.3);
+    transform-origin: 295px 280px;
+}
+@keyframes moveEyes{
+    20%{
+        transform: translate(-8px, 10px);
+    }
+
+    40%{
+        scale: translate(0,0);
+    }
+    68%{
+        transform: translate(8px, 0);
+    }
+}
+
+@keyframes Moustache
+{
+  10%{
+    transform: scale(1);
+    
+  }  
+  50%{
+    transform: scale(1.2);
+  }
+  100%{
+      transform: scale(1);
+  }
+}
+
+@keyframes RaiseEyebrow{
+    0%{
+        transform: translate(0, 0);
+    }
+    50%{
+        transform: translate(0, -10px); 
+    }
+    100%{
+        transform: translate(0, 0);
+    }
+}
+
+.fidget .eye{
+    animation: moveEyes 5s infinite;
+}
+
+.fidget .moustache{
+    
+    animation: Moustache 5s infinite;
+    transform-origin: 295px 280px;
+}
+
+.fidget .eyebrow{
+    animation: RaiseEyebrow 5s infinite;
+}
